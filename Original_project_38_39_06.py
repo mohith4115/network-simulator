@@ -6,6 +6,8 @@ def make_frames(sender_device,receiver_device,message): #frame making
     message = {'Data':message,'H2':[sender_device.address, receiver_device.address]}
     return message
 
+    
+
 
 def send_data(d1,message,ack_msg=False):
     print("Frame : {}".format(message))
